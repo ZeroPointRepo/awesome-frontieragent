@@ -43,6 +43,18 @@ const QUERIES = [
 // with nothing added is not a catalog entry.
 const DENY_OWNERS = new Set(['Kharisma1980']);
 
+// The upstream project itself, used to detect verbatim re-uploads. A mirror is not caught by the
+// fork filter (re-uploading rather than forking leaves `fork: false`) and not caught by
+// DENY_OWNERS (the owner is new every time), so it is tested by content: a candidate whose README
+// is byte-identical to upstream's has added nothing and is not an entry. This costs no extra API
+// calls because the loop already fetches every candidate's README.
+//
+// Kharisma1980 above was found this way by hand. The same pattern turned up on
+// awesome-praxist-plugins on 2026-08-31 (mcebomathibela8-eng/R-D, 5853 of 5853 paths identical),
+// where it would have published 27 rows and reported an ecosystem as having formed third-party
+// plugins when it had not. Detected structurally there too.
+const UPSTREAM_SLUG = 'ApodexAI/FrontierAgent';
+
 // OPTIONAL. If entries in this ecosystem are installed with a command, set a regex that matches a
 // real one in a project's own README, e.g. /^\s*(thing\s+install\s+\S+.*?)\s*$/i. When set, the
 // catalog gains an Install column and a row only counts as verified when the command comes out of
@@ -235,6 +247,7 @@ const discovery = {
   skippedForBudget: 0,
   droppedUnreadable: 0,
   droppedNoCommand: 0,
+  droppedMirror: 0,
   listed: 0,
 };
 if (discovery.notReachedByCap > 0) {
@@ -417,11 +430,21 @@ await run(curated, async (e) => {
   });
 });
 
+const upstreamReadme = await fetchReadme(UPSTREAM_SLUG);
+const upstreamKey = upstreamReadme ? upstreamReadme.replace(/\s+/g, ' ').trim() : null;
+if (!upstreamKey) console.log('  ! could not read upstream README; mirror detection is off this run');
+const mirrors = [];
+
 await run(shortlist, async (it) => {
   if (budgetLeft <= RESERVE) { discovery.skippedForBudget++; return; }
   budgetLeft -= 1; // the README comes off the raw CDN; this is headroom for the calls around it
   if (budgetLeft % 250 < 2) await refreshBudget();
   const md = await fetchReadme(it.full_name);
+  if (upstreamKey && md && md.replace(/\s+/g, ' ').trim() === upstreamKey) {
+    discovery.droppedMirror++;
+    mirrors.push(it.full_name);
+    return;
+  }
   let cmd = null;
   if (INSTALL_RE) {
     if (!md) { discovery.droppedUnreadable++; dropped.unresolved++; return; }
@@ -469,11 +492,13 @@ if (discovery.skippedForBudget > 0 || curatedUnchecked > 0) {
 console.log(
   `Discovery coverage of ${discovery.candidates} candidates: ${discovery.listed} listed, ` +
     `${discovery.droppedNoCommand} no usable install command, ${discovery.droppedUnreadable} unreadable, ` +
+    `${discovery.droppedMirror} verbatim re-upload(s) of ${UPSTREAM_SLUG}` +
+    `${mirrors.length ? ` (${mirrors.join(', ')})` : ''}, ` +
     `${discovery.skippedForBudget} skipped for REST budget, ${discovery.notReachedByCap} not reached by the MAX_CANDIDATES cap.`
 );
 const accounted =
   discovery.listed + discovery.droppedNoCommand + discovery.droppedUnreadable +
-  discovery.skippedForBudget + discovery.notReachedByCap;
+  discovery.droppedMirror + discovery.skippedForBudget + discovery.notReachedByCap;
 if (accounted !== discovery.candidates) {
   console.error(
     `Coverage does not reconcile: ${accounted} accounted for out of ${discovery.candidates} candidates. ` +
@@ -697,6 +722,7 @@ const feed = {
     curated: rows.filter((r) => r.curated).length,
     dropped_no_install_command: discovery.droppedNoCommand,
     dropped_unreadable: discovery.droppedUnreadable,
+    dropped_verbatim_reupload: discovery.droppedMirror,
     skipped_for_rest_budget: discovery.skippedForBudget,
     not_reached_by_cap: discovery.notReachedByCap,
     curated_unchecked_for_rest_budget: curatedUnchecked,
