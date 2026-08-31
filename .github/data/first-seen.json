@@ -1,0 +1,10 @@
+{
+  "_note": "When this catalog first listed each entry, keyed by owner/repo. Written by .github/scripts/build-catalog.mjs and never edited by hand. The ledger starts on 2026-08-24: every entry present that day carries that date because it is the first date we actually recorded, not the date we listed it. Nothing here is back-dated.",
+  "seen": {
+    "ApodexAI/AgentHarness": "2026-08-31",
+    "ApodexAI/FrontierAgent": "2026-08-31",
+    "dappweb/deepresearch-community": "2026-08-31",
+    "Kharisma1980/ApodexAI": "2026-08-31",
+    "ZeroPointRepo/transcriptapi-frontieragent-skill": "2026-08-31"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "name": "awesome-frontieragent",
+  "url": "https://github.com/ZeroPointRepo/awesome-frontieragent",
+  "source": "https://github.com/ZeroPointRepo/awesome-frontieragent",
+  "updated": "2026-08-31",
+  "count": 4,
+  "coverage": {
+    "_note": "What this run actually looked at. `listed` plus every other field equals `candidates`: a candidate the run did not reach is reported here rather than omitted, because a cap that is not published reads as if everything was checked.",
+    "candidates": 0,
+    "listed": 0,
+    "curated": 4,
+    "dropped_no_install_command": 0,
+    "dropped_unreadable": 0,
+    "skipped_for_rest_budget": 0,
+    "not_reached_by_cap": 0,
+    "curated_unchecked_for_rest_budget": 0
+  },
+  "categories": {
+    "official-reference": {
+      "en": "Official & Reference"
+    },
+    "distributions": {
+      "en": "Distributions"
+    },
+    "skills": {
+      "en": "Skills"
+    }
+  },
+  "plugins": [
+    {
+      "name": "FrontierAgent",
+      "owner": "ApodexAI",
+      "url": "https://github.com/ApodexAI/FrontierAgent",
+      "category": "official-reference",
+      "description": {
+        "en": "The runtime, the terminal client, and the evaluation suite"
+      },
+      "stars": 1311,
+      "install": "",
+      "added": "2026-08-31",
+      "screenshots": [
+        "https://raw.githubusercontent.com/ApodexAI/FrontierAgent/HEAD/assets/apodex_logo.jpeg",
+        "https://raw.githubusercontent.com/ApodexAI/FrontierAgent/HEAD/assets/apodex1.1_bench.png",
+        "https://raw.githubusercontent.com/ApodexAI/FrontierAgent/HEAD/assets/agent_team.png",
+        "https://raw.githubusercontent.com/ApodexAI/FrontierAgent/star-history/assets/star-history/star-history-light.svg"
+      ]
+    },
+    {
+      "name": "AgentHarness",
+      "owner": "ApodexAI",
+      "url": "https://github.com/ApodexAI/AgentHarness",
+      "category": "official-reference",
+      "description": {
+        "en": "Reproduce the deep-research benchmark numbers"
+      },
+      "stars": 427,
+      "install": "",
+      "added": "2026-08-31",
+      "screenshots": [
+        "https://raw.githubusercontent.com/ApodexAI/AgentHarness/HEAD/assets/apodex_logo.jpeg",
+        "https://raw.githubusercontent.com/ApodexAI/AgentHarness/HEAD/assets/apodex1.0_bench.png"
+      ]
+    },
+    {
+      "name": "deepresearch-community",
+      "owner": "dappweb",
+      "url": "https://github.com/dappweb/deepresearch-community",
+      "category": "distributions",
+      "description": {
+        "en": "Run a Chinese-language deep-research build with an evidence chain on every conclusion"
+      },
+      "stars": 0,
+      "install": "",
+      "added": "2026-08-31"
+    },
+    {
+      "name": "youtube-transcripts",
+      "owner": "ZeroPointRepo",
+      "url": "https://github.com/ZeroPointRepo/transcriptapi-frontieragent-skill",
+      "category": "skills",
+      "description": {
+        "en": "Read video: transcripts, search, and channel lookup"
+      },
+      "stars": 0,
+      "install": "",
+      "added": "2026-08-31"
+    }
+  ]
+}
