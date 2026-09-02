@@ -23,7 +23,7 @@
 - [Writing a FrontierAgent workflow plugin](#writing-a-frontieragent-workflow-plugin)
 - [Good to know](#good-to-know)
 
-- **Full catalog:** every verified FrontierAgent project (5) in [CATALOG.md](CATALOG.md)
+- **Full catalog:** every verified FrontierAgent project (6) in [CATALOG.md](CATALOG.md)
 - **Machine-readable:** the same rows as data in [catalog.csv](catalog.csv) and [plugins.json](plugins.json), a registry feed in [dsh-market](https://github.com/dsh-market/dsh-market)'s schema
 
 ---

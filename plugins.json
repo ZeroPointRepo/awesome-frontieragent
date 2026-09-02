@@ -2,12 +2,12 @@
   "name": "awesome-frontieragent",
   "url": "https://github.com/ZeroPointRepo/awesome-frontieragent",
   "source": "https://github.com/ZeroPointRepo/awesome-frontieragent",
-  "updated": "2026-08-31",
-  "count": 5,
+  "updated": "2026-09-02",
+  "count": 6,
   "coverage": {
     "_note": "What this run actually looked at. `listed` plus every other field equals `candidates`: a candidate the run did not reach is reported here rather than omitted, because a cap that is not published reads as if everything was checked.",
-    "candidates": 1,
-    "listed": 1,
+    "candidates": 2,
+    "listed": 2,
     "curated": 4,
     "dropped_no_install_command": 0,
     "dropped_unreadable": 0,
@@ -39,7 +39,7 @@
       "description": {
         "en": "The runtime, the terminal client, and the evaluation suite"
       },
-      "stars": 1321,
+      "stars": 1372,
       "install": "",
       "added": "2026-08-31",
       "screenshots": [
@@ -57,7 +57,7 @@
       "description": {
         "en": "Reproduce the deep-research benchmark numbers"
       },
-      "stars": 428,
+      "stars": 433,
       "install": "",
       "added": "2026-08-31",
       "screenshots": [
@@ -88,6 +88,24 @@
       "stars": 0,
       "install": "",
       "added": "2026-08-31"
+    },
+    {
+      "name": "FrontierAgent-Apodex-Local",
+      "owner": "szzjayson25-hub",
+      "url": "https://github.com/szzjayson25-hub/FrontierAgent-Apodex-Local",
+      "category": "unsorted",
+      "description": {
+        "en": "Local Apodex research workspace with persistent sessions, paper compilation, an Obsidian-compatible knowledge base, and a force-directed graph."
+      },
+      "stars": 0,
+      "install": "",
+      "added": "2026-09-02",
+      "screenshots": [
+        "https://raw.githubusercontent.com/szzjayson25-hub/FrontierAgent-Apodex-Local/HEAD/assets/apodex_logo.jpeg",
+        "https://raw.githubusercontent.com/szzjayson25-hub/FrontierAgent-Apodex-Local/HEAD/docs/assets/apodex-home.png",
+        "https://raw.githubusercontent.com/szzjayson25-hub/FrontierAgent-Apodex-Local/HEAD/docs/assets/apodex-knowledge-graph.png",
+        "https://raw.githubusercontent.com/szzjayson25-hub/FrontierAgent-Apodex-Local/HEAD/assets/apodex1.1_bench.png"
+      ]
     },
     {
       "name": "youtube-transcripts",
