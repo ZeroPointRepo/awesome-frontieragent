@@ -1,0 +1,29 @@
+{
+  "_note": "GitHub numeric repository id for every entry this list links to, recorded the first time the entry resolves. The id is immutable and survives a rename or a transfer; the slug does not, and once a vacated slug is claimed by somebody else, a slug-keyed lookup returns the new owner and reports the stale link as correct. Written by .github/scripts/resolve-names.mjs, never edited by hand.",
+  "ids": {
+    "apodexai/agentharness": {
+      "id": 1262034051,
+      "full_name": "ApodexAI/AgentHarness"
+    },
+    "apodexai/frontieragent": {
+      "id": 1342461518,
+      "full_name": "ApodexAI/FrontierAgent"
+    },
+    "dappweb/deepresearch-community": {
+      "id": 1349756257,
+      "full_name": "dappweb/deepresearch-community"
+    },
+    "dsh-market/dsh-market": {
+      "id": 1333807290,
+      "full_name": "dsh-market/dsh-market"
+    },
+    "zeropointrepo/awesome-frontieragent": {
+      "id": 1352050713,
+      "full_name": "ZeroPointRepo/awesome-frontieragent"
+    },
+    "zeropointrepo/transcriptapi-frontieragent-skill": {
+      "id": 1352049671,
+      "full_name": "ZeroPointRepo/transcriptapi-frontieragent-skill"
+    }
+  }
+}

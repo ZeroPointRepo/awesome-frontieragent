@@ -1,0 +1,3 @@
+# Written fresh by .github/scripts/resolve-names.mjs on every run and read straight into the step
+# summary. A committed copy is never regenerated, so it would sit in the repo going stale.
+canonical-names-report.md
