@@ -2,7 +2,7 @@
   "name": "awesome-frontieragent",
   "url": "https://github.com/ZeroPointRepo/awesome-frontieragent",
   "source": "https://github.com/ZeroPointRepo/awesome-frontieragent",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "count": 6,
   "coverage": {
     "_note": "What this run actually looked at. `listed` plus every other field equals `candidates`: a candidate the run did not reach is reported here rather than omitted, because a cap that is not published reads as if everything was checked.",
@@ -39,7 +39,7 @@
       "description": {
         "en": "The runtime, the terminal client, and the evaluation suite"
       },
-      "stars": 4663,
+      "stars": 5106,
       "install": "",
       "added": "2026-08-31",
       "screenshots": [
@@ -57,7 +57,7 @@
       "description": {
         "en": "Reproduce the deep-research benchmark numbers"
       },
-      "stars": 453,
+      "stars": 456,
       "install": "",
       "added": "2026-08-31",
       "screenshots": [
