@@ -2,12 +2,12 @@
   "name": "awesome-frontieragent",
   "url": "https://github.com/ZeroPointRepo/awesome-frontieragent",
   "source": "https://github.com/ZeroPointRepo/awesome-frontieragent",
-  "updated": "2026-10-12",
-  "count": 6,
+  "updated": "2026-10-19",
+  "count": 7,
   "coverage": {
     "_note": "What this run actually looked at. `listed` plus every other field equals `candidates`: a candidate the run did not reach is reported here rather than omitted, because a cap that is not published reads as if everything was checked.",
-    "candidates": 2,
-    "listed": 2,
+    "candidates": 3,
+    "listed": 3,
     "curated": 4,
     "dropped_no_install_command": 0,
     "dropped_unreadable": 0,
@@ -39,7 +39,7 @@
       "description": {
         "en": "The runtime, the terminal client, and the evaluation suite"
       },
-      "stars": 5228,
+      "stars": 5334,
       "install": "",
       "added": "2026-08-31",
       "screenshots": [
@@ -57,7 +57,7 @@
       "description": {
         "en": "Reproduce the deep-research benchmark numbers"
       },
-      "stars": 459,
+      "stars": 458,
       "install": "",
       "added": "2026-08-31",
       "screenshots": [
@@ -105,6 +105,23 @@
         "https://raw.githubusercontent.com/szzjayson25-hub/FrontierAgent-Apodex-Local/HEAD/docs/assets/apodex-home.png",
         "https://raw.githubusercontent.com/szzjayson25-hub/FrontierAgent-Apodex-Local/HEAD/docs/assets/apodex-knowledge-graph.png",
         "https://raw.githubusercontent.com/szzjayson25-hub/FrontierAgent-Apodex-Local/HEAD/assets/apodex1.1_bench.png"
+      ]
+    },
+    {
+      "name": "FrontierAgent-cn",
+      "owner": "yangshun2005",
+      "url": "https://github.com/yangshun2005/FrontierAgent-cn",
+      "category": "unsorted",
+      "description": {
+        "en": "[中文化] 🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency."
+      },
+      "stars": 0,
+      "install": "",
+      "added": "2026-10-19",
+      "screenshots": [
+        "https://raw.githubusercontent.com/yangshun2005/FrontierAgent-cn/HEAD/assets/apodex_logo.jpeg",
+        "https://raw.githubusercontent.com/yangshun2005/FrontierAgent-cn/HEAD/assets/apodex1.1_bench.png",
+        "https://raw.githubusercontent.com/yangshun2005/FrontierAgent-cn/HEAD/assets/agent_team.png"
       ]
     },
     {
