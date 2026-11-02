@@ -2,7 +2,7 @@
   "name": "awesome-frontieragent",
   "url": "https://github.com/ZeroPointRepo/awesome-frontieragent",
   "source": "https://github.com/ZeroPointRepo/awesome-frontieragent",
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "count": 7,
   "coverage": {
     "_note": "What this run actually looked at. `listed` plus every other field equals `candidates`: a candidate the run did not reach is reported here rather than omitted, because a cap that is not published reads as if everything was checked.",
@@ -20,11 +20,11 @@
     "official-reference": {
       "en": "Official & Reference"
     },
-    "distributions": {
-      "en": "Distributions"
-    },
     "unsorted": {
       "en": "Unsorted"
+    },
+    "distributions": {
+      "en": "Distributions"
     },
     "skills": {
       "en": "Skills"
@@ -39,7 +39,7 @@
       "description": {
         "en": "The runtime, the terminal client, and the evaluation suite"
       },
-      "stars": 5352,
+      "stars": 5438,
       "install": "",
       "added": "2026-08-31",
       "screenshots": [
@@ -57,12 +57,29 @@
       "description": {
         "en": "Reproduce the deep-research benchmark numbers"
       },
-      "stars": 460,
+      "stars": 464,
       "install": "",
       "added": "2026-08-31",
       "screenshots": [
         "https://raw.githubusercontent.com/ApodexAI/AgentHarness/HEAD/assets/apodex_logo.jpeg",
         "https://raw.githubusercontent.com/ApodexAI/AgentHarness/HEAD/assets/apodex1.0_bench.png"
+      ]
+    },
+    {
+      "name": "FrontierAgent-cn",
+      "owner": "yangshun2005",
+      "url": "https://github.com/yangshun2005/FrontierAgent-cn",
+      "category": "unsorted",
+      "description": {
+        "en": "[中文化] 🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency."
+      },
+      "stars": 1,
+      "install": "",
+      "added": "2026-10-19",
+      "screenshots": [
+        "https://raw.githubusercontent.com/yangshun2005/FrontierAgent-cn/HEAD/assets/apodex_logo.jpeg",
+        "https://raw.githubusercontent.com/yangshun2005/FrontierAgent-cn/HEAD/assets/apodex1.1_bench.png",
+        "https://raw.githubusercontent.com/yangshun2005/FrontierAgent-cn/HEAD/assets/agent_team.png"
       ]
     },
     {
@@ -105,23 +122,6 @@
         "https://raw.githubusercontent.com/szzjayson25-hub/FrontierAgent-Apodex-Local/HEAD/docs/assets/apodex-home.png",
         "https://raw.githubusercontent.com/szzjayson25-hub/FrontierAgent-Apodex-Local/HEAD/docs/assets/apodex-knowledge-graph.png",
         "https://raw.githubusercontent.com/szzjayson25-hub/FrontierAgent-Apodex-Local/HEAD/assets/apodex1.1_bench.png"
-      ]
-    },
-    {
-      "name": "FrontierAgent-cn",
-      "owner": "yangshun2005",
-      "url": "https://github.com/yangshun2005/FrontierAgent-cn",
-      "category": "unsorted",
-      "description": {
-        "en": "[中文化] 🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency."
-      },
-      "stars": 0,
-      "install": "",
-      "added": "2026-10-19",
-      "screenshots": [
-        "https://raw.githubusercontent.com/yangshun2005/FrontierAgent-cn/HEAD/assets/apodex_logo.jpeg",
-        "https://raw.githubusercontent.com/yangshun2005/FrontierAgent-cn/HEAD/assets/apodex1.1_bench.png",
-        "https://raw.githubusercontent.com/yangshun2005/FrontierAgent-cn/HEAD/assets/agent_team.png"
       ]
     },
     {
